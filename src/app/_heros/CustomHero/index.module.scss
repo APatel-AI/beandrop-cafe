@@ -23,18 +23,29 @@
   background-position: revert;
   background-repeat: no-repeat;
 
+
   @include small-break {
     background-size: cover;
     background-position: center;
   }
 }
 
+// Background image overlay
+.overlay{
+  position: absolute; 
+  top:0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0, 0, 0, 0.4);
+}
 .heroTextBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 15% var(--gutter-h);
   width: 100%;
+  z-index: 1; 
 
   @include mid-break {
     padding: 10% 30px;
