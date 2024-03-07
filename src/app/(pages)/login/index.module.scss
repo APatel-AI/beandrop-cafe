@@ -1,17 +1,17 @@
 @import '../../_css/common';
 
-.createAccount {
+.login {
   display: grid;
   grid-template-columns: 1fr 45%;
   height: 100vh;
-  overflow: auto;
+  
 
   @include mid-break {
     grid-template-columns: 1fr;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('/assets/images/image-2.svg');
+    background-image: url('/assets/images/coffee.svg');
   }
 
   p {
@@ -34,9 +34,7 @@
     }
   }
 
-  .handImg {
-    height: 24px;
-  }
+ 
 }
 
 .heroImg {
@@ -45,7 +43,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('/assets/images/image-1.svg');
+  background-image: url('/assets/images/coffee.svg');
 
   @include mid-break {
     background: none;
