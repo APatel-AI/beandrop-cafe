@@ -48,11 +48,12 @@ body {
   font-family: var(--font-jost);
   margin: 0;
   padding: 0;
-  color: var(--color-s-500);
+  color: var(--color-light-500);
+
   display: flex;
   flex-flow: column;
-
 }
+
 .main {
   flex: 1 1 auto;
 }
@@ -71,6 +72,8 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+
+  
 }
 
 h1 {
@@ -99,19 +102,18 @@ h6 {
 
 p {
   margin: 0;
-
-
 }
 
 ul,
 ol {
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 a {
-  color: var(--color-dark-500);
+  color: var(--color-light-500);
+  text-decoration: none;
 
   &:focus {
     opacity: .8;
