@@ -20,7 +20,6 @@ const queryMap = {
     query: ORDER,
     key: 'Orders',
   },
-  
 }
 
 export const fetchDoc = async <T>(args: {
