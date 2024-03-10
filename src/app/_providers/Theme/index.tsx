@@ -3,6 +3,7 @@
 import React, { createContext, useCallback, useContext, useEffect, useState } from 'react'
 
 import canUseDOM from '../../_utilities/canUseDOM'
+
 import { defaultTheme, getImplicitPreference, themeLocalStorageKey } from './shared'
 import { Theme, ThemeContextType, themeIsValid } from './types'
 
@@ -49,7 +50,11 @@ export const ThemeProvider: React.FC<{ children?: React.ReactNode }> = ({ childr
     setThemeState(defaultTheme)
   }, [])
 
-  return <ThemeContext.Provider value={{ theme: defaultTheme, setTheme }}>{children}</ThemeContext.Provider>
+  return (
+    <ThemeContext.Provider value={{ theme: defaultTheme, setTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  )
 }
 
 export const useTheme = (): ThemeContextType => useContext(ThemeContext)

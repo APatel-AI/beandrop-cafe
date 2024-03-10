@@ -2,9 +2,10 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { Button } from '../../Button'
+
 import { Header as HeaderType } from '../../../../payload/payload-types'
 import { useAuth } from '../../../_providers/Auth'
+import { Button } from '../../Button'
 import { CartLink } from '../../CartLink'
 import { CMSLink } from '../../Link'
 

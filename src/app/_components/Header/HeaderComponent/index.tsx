@@ -1,26 +1,30 @@
 'use client'
 import React from 'react'
-import { Header } from '../../../../payload/payload-types'
-import { Gutter } from '../../Gutter'
-import Link from 'next/link'
 import Image from 'next/image'
-import classes from './index.module.scss'
-import { HeaderNav } from '../Nav'
-import { noHeaderFooterUrls } from '../../../constants'
+import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-const HeaderComponent = ({ header }: {header: Header}) => {
 
+import { Header } from '../../../../payload/payload-types'
+import { noHeaderFooterUrls } from '../../../constants'
+import { Gutter } from '../../Gutter'
+import { HeaderNav } from '../Nav'
+
+import classes from './index.module.scss'
+const HeaderComponent = ({ header }: { header: Header }) => {
   const pathname = usePathname()
   return (
-    <nav className={[classes.header, noHeaderFooterUrls.includes(pathname) && classes.hide].filter(Boolean).join(' ')}>
-        <Gutter className={classes.wrap}>
-            <Link href="/">
-                <Image src='/header-logo.svg' alt='logo' width={200} height={200}/>
-            </Link>
-            <HeaderNav header={ header }/>
-            {/* <MobileNav header={ header }/> */}
-        </Gutter>
-
+    <nav
+      className={[classes.header, noHeaderFooterUrls.includes(pathname) && classes.hide]
+        .filter(Boolean)
+        .join(' ')}
+    >
+      <Gutter className={classes.wrap}>
+        <Link href="/">
+          <Image src="/header-logo.svg" alt="logo" width={200} height={200} />
+        </Link>
+        <HeaderNav header={header} />
+        {/* <MobileNav header={ header }/> */}
+      </Gutter>
     </nav>
   )
 }

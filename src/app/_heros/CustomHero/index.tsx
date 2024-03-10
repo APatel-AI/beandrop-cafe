@@ -16,7 +16,6 @@ export const CustomHero: React.FC<Page['hero']> = ({ richText, media, links }) =
   return (
     <section className={classes.hero}>
       <div className={classes.heroWrapper} style={{ backgroundImage: `url(${mediaUrl})` }}>
-
         {/* background image overlay*/}
         <div className={classes.overlay}></div>
         <div className={classes.heroTextBox}>
