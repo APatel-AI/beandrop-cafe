@@ -8,3 +8,12 @@
 * ```npm run dev```
 
 ## Preview
+#### Home:
+![Home Page](https://github.com/APatel-AI/beandrop-cafe/blob/main/preview/Home.png?raw=true)
+#### Checkout:
+![Checkout Page](https://github.com/APatel-AI/beandrop-cafe/blob/main/preview/Checkout.png?raw=true)
+#### Order History:
+![History Page](https://github.com/APatel-AI/beandrop-cafe/blob/main/preview/History.png?raw=true)
+#### Cart:
+![Cart Page](https://github.com/APatel-AI/beandrop-cafe/blob/main/preview/Cart.png?raw=true)
+
