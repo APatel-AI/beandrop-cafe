@@ -10,6 +10,8 @@
 ## Preview
 #### Home:
 ![Home Page](https://github.com/APatel-AI/beandrop-cafe/blob/main/preview/Home.png?raw=true)
+#### Products:
+![Product Page](https://github.com/APatel-AI/beandrop-cafe/blob/main/preview/Products.png?raw=true)
 #### Checkout:
 ![Checkout Page](https://github.com/APatel-AI/beandrop-cafe/blob/main/preview/Checkout.png?raw=true)
 #### Order History:
